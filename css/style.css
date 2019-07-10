@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+
+
+h1 {
+    margin: 50px auto;
+    color: rgb(233, 231, 225);
+    font-size: 9em;
+    text-align: center;
+    
+
+}
+body {
+    background: url('/Users/plengloetsakulcharoen/Desktop/14_31 Doodle a day for the month of March.jpeg') fixed;
+    background-size: contain;
+    font-family: 'Gochi Hand', cursive;
+}
+
+/* The whole board */
+.game-board
+{
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+  border: 6px solid rgba(255, 253, 253, 0);
+  border-radius: 10px;
+  display: grid;
+grid-template: repeat(3, 1fr) / repeat(3, 1fr); 
+    /* 3*3 display */
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+/* each tic tac toe box */
+.box 
+{
+  border: 6px solid rgba(red, green, blue, 0);
+  background-color: rgba(255, 253, 253, 0.90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 6em;
+
+}
+
+
+
+
