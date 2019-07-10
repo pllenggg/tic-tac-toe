@@ -1,22 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
-
-h1 {
-    margin: 50px auto;
-    color: rgb(233, 231, 225);
-    font-size: 9em;
-    text-align: center;
-    
-
-}
 body {
     background: url('/Users/plengloetsakulcharoen/Desktop/14_31 Doodle a day for the month of March.jpeg') fixed;
     background-size: contain;
     font-family: 'Gochi Hand', cursive;
 }
 
-/* The whole board */
+/* /////////////////////////////////board Game///////////////////////////// */
 .game-board
 {
 	width: 400px;
@@ -31,19 +22,113 @@ grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-column-gap: 20px;
 }
 
+.game-board :hover {
+  animation: nudge .4s linear;
+}
+
+@keyframes nudge {
+
+0% {
+  transform: rotate(-7deg);
+}
+
+33% {
+  transform: rotate(7deg);
+}
+
+66% {
+  transform: rotate(-7deg);
+}
+}
+
+
 /* each tic tac toe box */
 .box 
 {
+  
   border: 6px solid rgba(red, green, blue, 0);
-  background-color: rgba(255, 253, 253, 0.90);
+  background-color: rgba(223, 220, 215, 0.897);
+  color: rgb(3, 3, 63);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   font-family: 'Gochi Hand', cursive;
   font-size: 6em;
 
 }
 
 
+/* /////////////////////////////////tictactoe heading///////////////////////////// */
+h1 {
+  margin: 50px auto;
+  color: rgb(233, 231, 225);
+  font-size: 7em;
+  text-align: center;
+}
+.glow {
+  color: #fffdf0;
+  animation: neon .08s ease-in-out infinite alternate;
+}
 
+/* //keyframe// */
+/*-- Animation Keyframes --*/
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(228, 225, 202, 0.92),
+    0 0 30px rgba(228, 225, 202, 0.34),
+    0 0 12px rgba(242, 238, 30, 0.52),
+    0 0 21px rgba(242,238,30,0.92),
+    0 0 34px rgba(242,238,30,0.78),
+    0 0 54px rgba(242,238,30,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202, 225, 228, 0.98),
+    0 0 30px rgba(202,225,228,0.42),
+    0 0 12px rgba(3, 33, 87, 0.58),
+    0 0 22px rgba(3, 33, 87, 0.84),
+    0 0 38px rgba(3, 33, 87, 0.88),
+    0 0 60px rgba(3, 33, 87,1);
+  }
+}
+
+/* /////////////////////////////////container///////////////////////////// */
+.container {
+  position: relative;
+}
+/* /////////////////////////////////next turn///////////////////////////// */
+
+.nextTurn {
+  font-size: 2em;
+  font-family: 'Gochi Hand', cursive;
+  color: pink;
+}
+/* /////////////////////////////////message///////////////////////////// */
+.message {
+  font-size: 2em;
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  position: absolute;
+  background-color: rgb(100, 11, 11);
+color: rgb(247, 252, 204);
+  
+
+}
+/* /////////////////////////////////restart button///////////////////////////// */
+.restartGame {
+  text-decoration: none; 
+  text-align: center;
+  background-color: rgba(228, 225, 202, 0);
+  color: rgb(233, 231, 225);
+  border-color: transparent;
+  display: inline-block;
+  margin: 0 555px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2em;
+  animation: neon .08s ease-in-out infinite alternate;
+  cursor: pointer;
+}
 
