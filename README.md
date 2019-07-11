@@ -14,7 +14,7 @@ The Rules
 Enjoy my tic-tac-toe ♡
 
 
-Screenshots (Images of your Project)
+Screenshots
 --------
 
 ![](https://github.com/pllenggg/tic-tac-toe/blob/master/image/first.png)
