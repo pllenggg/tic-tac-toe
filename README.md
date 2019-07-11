@@ -17,11 +17,11 @@ Enjoy my tic-tac-toe ♡
 Screenshots (Images of your Project)
 --------
 
-![](/project0/image/first.png)
+![](https://github.com/pllenggg/tic-tac-toe/blob/master/image/first.png)
 
-![](/project0/image/second.png)
+![](https://github.com/pllenggg/tic-tac-toe/blob/master/image/second.png)
 
-![](/project0/image/third.png)
+![](https://github.com/pllenggg/tic-tac-toe/blob/master/image/third.png)
 
 
 Technologies Used
