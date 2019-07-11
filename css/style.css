@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Short+Stack&display=swap');
 
 body {
-    background: url('/Users/plengloetsakulcharoen/Desktop/14_31 Doodle a day for the month of March.jpeg') fixed;
+    background: url("../image/14_31\ Doodle\ a\ day\ for\ the\ month\ of\ March.jpeg") fixed;
     background-size: contain;
     font-family: 'Gochi Hand', cursive;
 }
