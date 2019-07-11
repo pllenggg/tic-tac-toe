@@ -6,13 +6,11 @@ $(document).ready(function () {
 let playerX = []; // empty array to store what player x's clicks
 let playerO = []; // to store what player o's clicks
 let playerClick = 0; 
+
+//collect score each round//
 let scoreX = "";
 let scoreO = "";
 let draw = "";
-
-
-
-
 
 //winning conditions //
 
