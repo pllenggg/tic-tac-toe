@@ -24,11 +24,11 @@ body {
 }
 
 .draw {
-  animation: nudge .4s linear;
+  animation: nudge .8s linear;
 }
 
 .game-board :hover {
-  animation: nudge .4s linear;
+  animation: nudge .8s linear;
 }
 
 @keyframes nudge {
@@ -51,7 +51,7 @@ body {
 .box 
 {
   
-  border: 6px solid rgba(red, green, blue, 0);
+  border: transparent;
   background-color: rgba(223, 220, 215, 0.897);
   color: rgb(3, 3, 63);
   display: flex;
